@@ -19,7 +19,7 @@ def find_the_cheese(strings)
   cheese_types.each { |cheese|
     if strings.include?(cheese)
       return cheese
-    elsif cheese == camembert
+    elsif cheese == "camembert"
       return nil
     end
   }
