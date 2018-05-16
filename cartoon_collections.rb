@@ -14,7 +14,11 @@ def long_planeteer_calls(lines)
   lines.any? { |line| line.size > 4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(strings)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_types.each { |cheese|
+    if strings.include?(cheese)
+      return cheese
+    end
+  }
 end
